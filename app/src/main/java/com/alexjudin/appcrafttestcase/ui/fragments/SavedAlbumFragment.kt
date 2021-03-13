@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.lifecycle.observe
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -28,17 +29,18 @@ class SavedAlbumFragment : Fragment(R.layout.fragment_saved_albums) {
         viewModel = (activity as MainActivity).viewModel
         bindRV()
 
-        /*albumAdapter.setOnItemClickListener {
+        albumAdapter.setOnItemClickListener {
 
             val bundle = Bundle().apply {
-                putSerializable("albumId", it.id)
+                putSerializable("album", it)
+                putSerializable("screenType",1)
 
             }
             findNavController().navigate(
-                    R.id.action_savedNewsFragment_to_webFragment,
+                    R.id.action_savedAlbumsFragment_to_photosFragment,
                     bundle
             )
-        }*/
+        }
 
         val itemTouchHelper = object : ItemTouchHelper.SimpleCallback(
                 ItemTouchHelper.UP or ItemTouchHelper.DOWN,

@@ -35,6 +35,16 @@ class PhotosFragment : Fragment(R.layout.fragment_photos) {
         viewModel = (activity as MainActivity).viewModel
 
         val album = args.album
+        val screenType=args.screenType
+        if (screenType==1)
+        {
+            fab.visibility=View.INVISIBLE
+            back.setOnClickListener {
+                findNavController().navigate(
+                    R.id.action_photosFragment_to_savedAlbumsFragment
+                )
+            }
+        }
 
         bindRV()
 

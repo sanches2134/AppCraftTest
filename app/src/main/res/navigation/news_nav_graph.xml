@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_photosFragment_to_savedAlbumsFragment"
             app:destination="@id/savedAlbumsFragment" />
+        <argument
+            android:name="screenType"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/AlbumFragment"
