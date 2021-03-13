@@ -34,6 +34,8 @@ class AlbumFragment : Fragment(R.layout.fragment_album) {
 
             val bundle = Bundle().apply {
                 putSerializable("album", it)
+                putSerializable("screenType",2)
+
             }
             findNavController().navigate(
 
