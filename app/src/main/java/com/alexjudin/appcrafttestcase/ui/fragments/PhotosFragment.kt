@@ -74,7 +74,7 @@ class PhotosFragment : Fragment(R.layout.fragment_photos) {
 
         fab.setOnClickListener {
             viewModel.saveAlbum(album)
-            Snackbar.make(view, "Новость сохранена!", Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(view, "Альбом сохранен!", Snackbar.LENGTH_SHORT).show()
         }
 
         back.setOnClickListener {
