@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AppCraft TestCase</string>
+    <string name="source">SOURCE</string>
+    <string name="published_at">PUBLISHED AT</string>
+    <string name="title">TITLE</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="failed_to_connect">Failed to connect</string>
+    <string name="retry">Retry</string>
+    <string name="find_geo">Отслеживать геолокацию</string>
+    <string name="location_unknown">Location unknown</string>
+    <string name="location_updates_label">Location Updates</string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="request_location_updates">Request location updates</string>
+    <string name="remove_location_updates">Remove location updates</string>
+    <string name="launch_activity">Launch activity</string>
+
+    <string name="location_updated">Location Updated: %1$s</string>
+    <string name="albums">Albums</string>
+    <string name="saved_albums">Saved Albums</string>
+    <string name="geolocation">Geolocation</string>
+</resources>

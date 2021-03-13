@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/AlbumFragment"
+        android:title="@string/albums"
+        android:icon="@drawable/ic_album" />
+
+    <item android:id="@+id/savedAlbumsFragment"
+        android:title="@string/saved_albums"
+        android:icon="@drawable/ic_saved_album" />
+
+    <item android:id="@+id/geolocationFragment"
+        android:title="@string/geolocation"
+        android:icon="@drawable/ic_location"/>
+
+</menu>
